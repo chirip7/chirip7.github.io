@@ -8,8 +8,23 @@
         <!-- add styles -->
         <link href="css/main.css" rel="stylesheet" type="text/css" />
         <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+        
+    <script>
+        window.oncontextmenu = function () {
+            return false;
+        }
+        $(document).keydown(function (event) {
+            if (event.keyCode == 123) {
+                return false;
+            }
+            else if ((event.ctrlKey && event.shiftKey && event.keyCode == 73) || (event.ctrlKey && event.shiftKey && event.keyCode == 74)) {
+                return false;
+            }
+        });
+    </script>
+    
     </head>
-    <body>
+    <body >
         <div class="container" id="main" role="main">
             <ul class="menu">
                 <li><a href="#">MAIL</a>
@@ -50,7 +65,7 @@
                     <ul class="submenu">
                         <li><a href="https://www.xe.com/currencyconverter/">currency</a></li>
                         <li><a href="https://www.getfvid.com/">Download</a></li>
-                        <li><a href="https://y2mate.guru/en/youtube-to-mp4/">mp4 conv.</a></li>
+                        <li><a href="https://www.clipconverter.cc/">mp4 conv.</a></li>
                         <li><a href="https://getintopc.com/softwares">Softwares</a></li>
                         <li><a href="https://ytmp3.cc/en13/">mp3 conv.</a></li>
                         <li><a href="https://www.freeconvert.com/video-compressor">Vid. comp.</a></li>
@@ -69,5 +84,6 @@
                 </li>
             </ul>
         </div>
+
     </body>
 </html>
